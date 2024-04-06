@@ -1,11 +1,8 @@
 # Created by sqec aka SquareScreamYT
 # https://youtube.com/@sqec
 
-# requires customtkinter and ctkcolorpicker
-
-# Version 1.0
-
 """
+
 Todo:
 Multiple Elements
 Color Gradients
@@ -73,7 +70,7 @@ class App(ctk.CTk):
                 elembreakinto = "crushed_element"
             else:
                 elembreakinto = finalname(self.breakIntoEntry.get())
-            endcode =   "elements."+str(elemname)+"\n"\
+            endcode =   "elements."+str(elemname)+":{\n"\
                         "    color:\""+str(elemcolor)+"\",\n"\
                         "    behavior:behaviors."+str(elembehavior)+",\n"\
                         "    category:\""+str(elemcategory)+",\n"\
@@ -271,7 +268,7 @@ class App(ctk.CTk):
         self.generateCodeButton.grid(row=9, column=1, columnspan=3,
                                 padx=20, pady=20, sticky="ew")
         
-        self.TheActualCode = ctk.CTkLabel(self.ThePageFrame, font=("Fira Code", 15), text_color="#F9FBFE",
+        self.TheActualCode = ctk.CTkLabel(self.ThePageFrame, font=("Fira Code", 15), text_color="#F9FBFE", justify="left",
                             text="press the generate code button to generate the code")
         self.TheActualCode.grid(row=10, column=1, columnspan=5,
                                 padx=20, pady=20,
