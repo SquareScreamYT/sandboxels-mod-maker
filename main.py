@@ -120,7 +120,7 @@ class App(ctk.CTk):
             elemhidden = self.HiddenVar.get()
             endcode = endcode+"    hidden:"+str(elemhidden)+",\n"
             self.HardnessVar = self.hardnessEntry.get()
-            if numerify(self.HardnessVar) != "" and numerify(self.HardnessVar) < 1 and re.sub('_', '', finalname(self.breakIntoEntry.get())) != "":
+            if numerify(self.HardnessVar) != ""and re.sub('_', '', finalname(self.breakIntoEntry.get())) != "":
                 elemhardness = self.HardnessVar.get()
                 endcode = endcode+"    hardness:"+str(elemhardness)+",\n"
             if re.sub('_', '', finalname(self.breakIntoEntry.get())) == "":
