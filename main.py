@@ -343,7 +343,7 @@ class App(ctk.CTk):
         self.TheCodeFrame = CodeFrame(master=self.ThePageFrame, width=500, height=300, corner_radius=20, fg_color="gray")
         self.TheCodeFrame.place(x=120, y=700)
         
-        self.TheActualCode = ctk.CTkLabel(self.TheCodeFrame, font=("Fira Code", 15), text_color="#F9FBFE", justify="left",
+        self.TheActualCode = ctk.CTkLabel(self.TheCodeFrame, font=("Fira Code", 15), text_color="#050505", justify="left",
                             text="press the generate code button to generate code")
         self.TheActualCode.grid(row=0, column=1, columnspan=1,
                                 padx=20, pady=20,
