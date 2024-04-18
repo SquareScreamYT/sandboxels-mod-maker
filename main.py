@@ -76,7 +76,7 @@ class App(ctk.CTk):
                 self.ElementCategoryEnter.grid(row=5, column=1,
                     columnspan=3, padx=20,
                     pady=20, sticky="ew")
-                self.othercategory = True
+                self.othercat = True
                 self.TheCodeFrame.place(x=120, y=770)
             elif chosencategory != "Other" and self.othercat == True:
                 self.ElementCategoryEnter.destroy() 
@@ -223,7 +223,7 @@ class App(ctk.CTk):
                                 padx=20, pady=20,
                                 sticky="ew")
         
-        self.othercat = False
+        self.othercat = True
         self.ElementCategoryOptionMenu = ctk.CTkOptionMenu(self.ThePageFrame,
                                     values=["Land",
                                     "Liquids",
